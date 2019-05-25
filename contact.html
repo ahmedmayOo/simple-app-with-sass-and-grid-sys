@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sass | Project</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header-inner">
+        <div class="container">
+            <nav id="main-nav">
+                <img src="/dist/img/logo.png" alt="My Portfolio" id="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="work.html" class="current">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Section |A : Contact Info -->
+    <section class="contact-a text-center py-3">
+        <div class="container">
+            <h2 class="section-title"> Contact Me </h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Here is how you can reach me</p>
+            <form data-netlify-recaptcha="true" name="contact" method="POST" data-netlify="true">
+                <div class="text-fields" grid>
+                    <input name="name" type="text" class="text-input name-input" placeholder="Name">
+                    <input name="subject" type="text" class="text-input subject-input" placeholder="Subject">
+                    <input name="address" type="email" class="text-input email-input" placeholder="Email Address">
+                    <input name="number" type="text" class="text-input phone-input" placeholder="Phone Number">
+                    <textarea name="message"  class="text-input message-input" placeholder="Enter Message" ></textarea>
+                    <div class="my-2">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </div>
+                <button type="submit" class=" btn btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+   
+    <!-- Section |B : Contact Info -->
+    <section class="contact-b py-3 bg-dark">
+        <div class="container">
+            <div class="contact-info" grid>
+                <div>
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h3>Email</h3>
+                    <p>ahmedghanem454@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone fa-2x"></i>
+                    <h3>Phone</h3>
+                    <p>(555) 555-55555</p>
+                </div>
+                <div>
+                    <i class="fas fa-address fa-2x"></i>
+                    <h3>Address</h3>
+                    <p>50 Main st, Boston MA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section |C : Contact Info -->
+    <section class="contact-c py-4 bg-main">
+        <div class="container">
+            <h1>Let's Start Your Next Project</h1>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p> Copy &copy; 2019. All Rights Reserved </p>
+            <div class="social">
+                <i class="fab fa-twitter "></i>
+                <i class="fab fa-facebook "></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin    "></i>
+
+            </div>
+        </div>
+    </footer>
+    <script src="/dist/js/typewriter.js"></script>
+</body>
+
+</html>
