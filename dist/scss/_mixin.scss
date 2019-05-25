@@ -1,0 +1,22 @@
+@import 'config'; 
+
+
+@mixin fs-medium {
+    font-size: $fs-medium;
+}
+
+// Set width, height and line-height same size
+@mixin whl($same) {
+    width: $same;
+    height: $same;
+    line-height: $same;
+}
+
+// Set Text Color 
+@function set-text-color($color) {
+    @if(lightness($color) > 50 ) {
+        @return #000;
+    }@else {
+        @return #fff;
+    }
+}
